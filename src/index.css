@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0.03), transparent 30%),
