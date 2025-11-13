@@ -1,4 +1,4 @@
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Home } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -21,7 +21,8 @@ export default function Navbar() {
     <header className="py-6 flex justify-center">
       <nav className="fixed top-6 z-50 bg-black/30 backdrop-blur-md text-white rounded-full border border-white/10 shadow-lg w-full max-w-5xl mx-6">
         <div className="flex items-center justify-between px-6 py-2">
-          <Link className="text-xl font-display font-bold text-white tracking-wider" to="/">
+          <Link className="flex items-center gap-2 text-xl font-display font-bold text-white tracking-wider" to="/">
+            <Home size={24} />
             INTENSIFY
           </Link>
           <div className="hidden md:flex items-center space-x-2">
@@ -68,13 +69,16 @@ export default function Navbar() {
       )}
 
       <div
-        className={`fixed right-0 top-0 h-screen w-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black z-50 md:hidden transform transition-all duration-500 ease-out ${
+        className={`fixed right-0 top-0 h-screen w-screen bg-black/40 backdrop-blur-md z-50 md:hidden transform transition-all duration-500 ease-out border-l border-white/10 ${
           mobileMenuOpen ? 'translate-x-0 shadow-2xl' : 'translate-x-full'
         }`}
       >
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-6 border-b border-white/10">
-            <span className="text-xl font-display font-bold text-white tracking-wider">INTENSIFY</span>
+            <span className="flex items-center gap-2 text-xl font-display font-bold text-white tracking-wider">
+              <Home size={24} />
+              INTENSIFY
+            </span>
             <button
               className="text-white hover:bg-white/10 p-2 rounded-full transition-colors duration-300"
               onClick={() => setMobileMenuOpen(false)}

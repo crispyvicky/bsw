@@ -1,12 +1,12 @@
-import { Zap } from 'lucide-react';
+import { Home } from 'lucide-react';
 
 export default function Footer() {
   return (
     <footer id="contact" className="py-12 border-t border-gray-800">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         <div className="flex flex-col items-center md:items-start">
-          <a className="flex items-center gap-2 text-2xl font-display font-bold text-white tracking-wider mb-4 hover:opacity-80 transition-opacity" href="/">
-            <Zap className="w-6 h-6 text-white fill-white" strokeWidth={1.5} />
+          <a className="flex items-center gap-2 text-2xl font-display font-bold text-white tracking-wider mb-4" href="#">
+            <Home size={28} />
             INTENSIFY
           </a>
           <p className="text-gray-400 text-sm max-w-xs">
