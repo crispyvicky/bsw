@@ -1,9 +1,12 @@
+import { Zap } from 'lucide-react';
+
 export default function Footer() {
   return (
     <footer id="contact" className="py-12 border-t border-gray-800">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         <div className="flex flex-col items-center md:items-start">
-          <a className="text-2xl font-display font-bold text-white tracking-wider mb-4" href="#">
+          <a className="flex items-center gap-2 text-2xl font-display font-bold text-white tracking-wider mb-4 hover:opacity-80 transition-opacity" href="/">
+            <Zap className="w-6 h-6 text-white fill-white" strokeWidth={1.5} />
             INTENSIFY
           </a>
           <p className="text-gray-400 text-sm max-w-xs">
@@ -49,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-        <p>&copy; 2024 Intensify. All Rights Reserved.</p>
+        <p>&copy; 2025 Intensify. All Rights Reserved.</p>
       </div>
     </footer>
   );

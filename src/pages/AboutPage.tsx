@@ -1,14 +1,19 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Lightbulb, Award, Users, Shield } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function AboutPage() {
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <div className="min-h-screen bg-background-light dark:bg-background-dark text-gray-700 dark:text-gray-300 antialiased">
       <Navbar />
       <main>
-        <section className="relative h-[60vh] min-h-[400px] lg:min-h-[500px] flex items-end py-16 lg:py-24 text-left px-6 lg:px-8">
+        <section id="about-hero" className="relative h-[60vh] min-h-[400px] lg:min-h-[500px] flex items-end py-16 lg:py-24 text-left px-6 lg:px-8">
           <div className="absolute inset-0 z-0 px-6 lg:px-8">
             <img
               alt="Sophisticated modern interior with luxurious seating and ambient lighting"
@@ -50,7 +55,7 @@ export default function AboutPage() {
         </section>
 
         <section className="py-24 lg:py-32 px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto bg-gray-900/50 rounded-4xl p-8 lg:p-16">
+          <div className="max-w-7xl mx-auto bg-black/50 border border-gray-800 rounded-4xl p-8 lg:p-16">
             <div className="mb-16 text-center">
               <h2 className="text-4xl lg:text-5xl font-bold text-white tracking-wide">MEET OUR TEAM</h2>
               <p className="mt-4 max-w-2xl mx-auto text-gray-400">
@@ -63,7 +68,7 @@ export default function AboutPage() {
                   <img
                     alt="Professional portrait of Olivia Vance"
                     className="w-full h-full rounded-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGvfM09Y0b-NefwOVVgqWb7IB19O6u4bFl124RQBEg_aoxBe28cYQ__0KWDZ9K0MR53z4OtIMdQFgI8Hnbuq18QfBo9KaJKiz7IOuEGfVjZomn3BpgzwlvMoq9Sxes7Vt-HNpl7r4TeE2Z-J-fJlqoWJHQi9pv2JDeOpQx3mWWkU8nV5Taw_R1r0P3wmfJWYoV3dSP380N16tjKWuMvX1IKQwlXl3AU-vd6j7i7HoyeZV0aNKYBDTC31bG5Zlq8ZWFiVV3LctO_aQ"
+                    src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white">Olivia Vance</h3>
@@ -77,7 +82,7 @@ export default function AboutPage() {
                   <img
                     alt="Professional portrait of Liam Chen"
                     className="w-full h-full rounded-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuClr7BXMYjoWVnVk47PY8IXUrLJAyIyOHO-yzB062mk-36Qu0Rd_uoJ00CXR_mrxQFE1mMW7YsBM3YOY5MNz_jn1xBZgN5rDHbcIyQd5JwXYFscUejEbGPjs0vnXml5Xkueyx6lnozQsctWYa0k0YzFM96sGF6h4NNRe-1cZZMGh-NCGQNvemT-jf9QnH-Caq6IIvqS87voDT4-x-mvMvaX_IUMj4-eWvhyushSy8dJQhzTmhVKxGlOVUmA1Q9KiFMc4gH3jzLbTeI"
+                    src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white">Liam Chen</h3>
@@ -91,7 +96,7 @@ export default function AboutPage() {
                   <img
                     alt="Professional portrait of Amara Singh"
                     className="w-full h-full rounded-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOlt4jnz6lysNSlHDMteUzl5svHiPCuytGZHXEioBmGUHiS2FU8dtnfxchITOpDpjxIGE2tbC9SNQMXeEHSf7dKXIz4H2DArKE8lgFjBsV0SPVK25_HhSlG27C9NL0SFpD-ZTiU8Sj3ALVjmje-HkUNS6sYSC-6PkuB2T5Yxf9RaKWl-zdKRvpvLQaNbHuAv05UaNF9G7nBfGU3YZ6PG6pHCB7nRn-AZjDrW9e1CDA7SGq71bAmKlebp_0EYJZIzzBL5UQRuSfSf4"
+                    src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white">Amara Singh</h3>

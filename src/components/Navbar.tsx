@@ -68,7 +68,7 @@ export default function Navbar() {
       )}
 
       <div
-        className={`fixed right-0 top-0 h-screen w-[85vw] bg-gradient-to-br from-gray-950 via-gray-900 to-black z-50 md:hidden transform transition-all duration-500 ease-out ${
+        className={`fixed right-0 top-0 h-screen w-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black z-50 md:hidden transform transition-all duration-500 ease-out ${
           mobileMenuOpen ? 'translate-x-0 shadow-2xl' : 'translate-x-full'
         }`}
       >
