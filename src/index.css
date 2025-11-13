@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0.03), transparent 30%),
+                    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.03), transparent 40%);
+}
+
+.dark {
+  background-color: #111111;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
