@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Lightbulb, Award, Users, Shield } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -10,17 +11,16 @@ export default function AboutPage() {
         <section className="relative h-[60vh] min-h-[400px] lg:min-h-[500px] flex items-end py-16 lg:py-24 text-left px-6 lg:px-8">
           <div className="absolute inset-0 z-0 px-6 lg:px-8">
             <img
-              alt="Elegant, modern interior with minimalist furniture and sophisticated lighting"
-              className="w-full h-full object-cover rounded-2xl"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeKpQBwJNDH1ULCDvhwdcIByeKNN7vClN3NurNvIvcnqTd4eKRrC7gTECYU7lONL-8vuYV4ttu_3ALqgt31CTCdByB2atKH6wCmkM-FcuUNKBx_Bjg3c2z4hkRTl-TSNzk2SzRs3vyM7ZD5zupOskI6QjviPqOEPxm2aiSo5DcwjYOIEzDK-F5qCqjpRHEWYcvWGT__ZHLcfHZcLUuAtnUvDqwbLeqNa21GuBLrtnYYMODWNXaAOE4xuMmM3guJM1O5oT193x2AVI"
+              alt="Sophisticated modern interior with luxurious seating and ambient lighting"
+              className="w-full h-full object-cover rounded-2xl brightness-90"
+              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20 rounded-2xl"></div>
           </div>
           <div className="relative z-10 w-full px-8 md:px-12">
-            <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter uppercase text-white leading-none">
+            <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter uppercase text-white leading-none drop-shadow-lg">
               About Us
             </h1>
-            <p className="mt-4 max-w-2xl text-lg text-white/90">Crafting narratives in space, one design at a time.</p>
+            <p className="mt-4 max-w-2xl text-lg text-white drop-shadow-md">Crafting narratives in space, one design at a time.</p>
           </div>
         </section>
 
@@ -169,22 +169,30 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="border border-gray-800 p-8 rounded-2xl text-center hover:bg-gray-900/50 transition-colors duration-300">
-                <div className="text-4xl text-white mb-4">💡</div>
+                <div className="flex items-center justify-center mb-4">
+                  <Lightbulb className="w-12 h-12 text-white" strokeWidth={1.5} />
+                </div>
                 <h3 className="text-xl font-bold text-white mb-2">Creativity</h3>
                 <p className="text-gray-400 text-sm">We foster a culture of innovation and artistic expression in every project.</p>
               </div>
               <div className="border border-gray-800 p-8 rounded-2xl text-center hover:bg-gray-900/50 transition-colors duration-300">
-                <div className="text-4xl text-white mb-4">✓</div>
+                <div className="flex items-center justify-center mb-4">
+                  <Award className="w-12 h-12 text-white" strokeWidth={1.5} />
+                </div>
                 <h3 className="text-xl font-bold text-white mb-2">Excellence</h3>
                 <p className="text-gray-400 text-sm">We are committed to the highest standards of quality and craftsmanship.</p>
               </div>
               <div className="border border-gray-800 p-8 rounded-2xl text-center hover:bg-gray-900/50 transition-colors duration-300">
-                <div className="text-4xl text-white mb-4">👥</div>
+                <div className="flex items-center justify-center mb-4">
+                  <Users className="w-12 h-12 text-white" strokeWidth={1.5} />
+                </div>
                 <h3 className="text-xl font-bold text-white mb-2">Collaboration</h3>
                 <p className="text-gray-400 text-sm">We believe the best results come from a true partnership with our clients.</p>
               </div>
               <div className="border border-gray-800 p-8 rounded-2xl text-center hover:bg-gray-900/50 transition-colors duration-300">
-                <div className="text-4xl text-white mb-4">🤝</div>
+                <div className="flex items-center justify-center mb-4">
+                  <Shield className="w-12 h-12 text-white" strokeWidth={1.5} />
+                </div>
                 <h3 className="text-xl font-bold text-white mb-2">Integrity</h3>
                 <p className="text-gray-400 text-sm">We operate with transparency, honesty, and respect in all our dealings.</p>
               </div>
