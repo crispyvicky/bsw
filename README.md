@@ -42,11 +42,11 @@ Experience the platform in action! Browse our portfolio, explore design services
 ## 🎨 Features
 
 ### 🏡 Portfolio Showcase
-- **Curated Design Projects** - Handpicked stunning interior designs
+- **Curated Design Projects** - Handpicked stunning interior designs across all categories
 - **High-Quality Galleries** - Professional photography and immersive visuals
 - **Interactive Project Cards** - Smooth animations and engaging interactions
-- **Category Filtering** - Browse by residential, commercial, luxury, and more
-- **Detailed Project Pages** - Complete project information and inspiration
+- **Detailed Project Information** - Complete descriptions and client testimonials
+- **Diverse Project Range** - Residential, Commercial, and Hospitality designs
 
 ### 🛎️ Services Offered
 - 🏠 Residential Design
@@ -167,7 +167,8 @@ Intensify-Saas/
 │   │   └── Testimonials.tsx  # Client reviews
 │   ├── 📂 pages/             # Page components
 │   │   ├── HomePage.tsx      # Home page
-│   │   └── AboutPage.tsx     # About page
+│   │   ├── AboutPage.tsx     # About page
+│   │   └── PortfolioPage.tsx # Portfolio/Projects page
 │   ├── App.tsx               # Main app component
 │   ├── main.tsx              # Entry point
 │   ├── index.css             # Global styles
@@ -229,6 +230,15 @@ Intensify uses a sophisticated, premium color scheme inspired by modern interior
 - Design approach and process
 - Before/after project showcases
 - Client success stories
+
+### 🎨 Portfolio Page (`/portfolio`)
+- Stunning hero section with background image
+- Complete project showcase with detailed descriptions
+- Alternating layout for visual interest
+- Client testimonials for each project
+- 6 diverse projects across Residential, Commercial, and Hospitality categories
+- Hover effects on project images
+- Mobile-responsive design
 
 ---
 

@@ -41,9 +41,9 @@ export default function Navbar() {
             <a className="px-3 py-2 rounded-full hover:bg-white/10 transition-colors duration-300" href={isHomePage ? "#services" : "/#services"}>
               Services
             </a>
-            <a className="px-3 py-2 rounded-full hover:bg-white/10 transition-colors duration-300" href={isHomePage ? "#projects" : "/#projects"}>
-              Projects
-            </a>
+            <Link className="px-3 py-2 rounded-full hover:bg-white/10 transition-colors duration-300" to="/portfolio">
+              Portfolio
+            </Link>
             <a className="px-3 py-2 rounded-full hover:bg-white/10 transition-colors duration-300" href={isHomePage ? "#contact" : "/#contact"}>
               Contact
             </a>
@@ -120,12 +120,13 @@ export default function Navbar() {
               <span className="relative z-10">Services</span>
             </button>
 
-            <button
-              onClick={() => scrollToSection('projects')}
-              className="group relative overflow-hidden bg-gradient-to-r from-white/5 to-white/0 hover:from-white/10 hover:to-white/5 px-6 py-4 rounded-3xl transition-all duration-300 text-lg font-semibold text-white text-left"
+            <Link
+              onClick={() => setMobileMenuOpen(false)}
+              to="/portfolio"
+              className="group relative overflow-hidden bg-gradient-to-r from-white/5 to-white/0 hover:from-white/10 hover:to-white/5 px-6 py-4 rounded-3xl transition-all duration-300 text-lg font-semibold text-white"
             >
-              <span className="relative z-10">Projects</span>
-            </button>
+              <span className="relative z-10">Portfolio</span>
+            </Link>
 
             <button
               onClick={() => scrollToSection('contact')}
