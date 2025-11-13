@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
@@ -27,12 +28,12 @@ export default function About() {
           <p className="my-8 leading-relaxed text-gray-400">
             Our approach is rooted in collaboration. We listen, understand, and work closely with our clients to translate their dreams into reality. Whether it's a cozy home, a vibrant office, or a commercial space, we infuse every project with passion and precision.
           </p>
-          <a className="inline-flex items-center font-semibold text-gray-900 dark:text-white group" href="#about">
+          <Link className="inline-flex items-center font-semibold text-gray-900 dark:text-white group" to="/about">
             READ MORE
             <span className="ml-3 flex items-center justify-center w-8 h-8 rounded-full border border-gray-400 dark:border-gray-600 group-hover:bg-white dark:group-hover:text-black transition-all">
               <ArrowRight size={16} />
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
