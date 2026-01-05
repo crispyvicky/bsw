@@ -83,6 +83,54 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Proprietor Section */}
+        <section className="py-32 lg:py-48 px-6 lg:px-8 bg-[#F1F5F9] relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-[120px] -mr-64 -mt-64"></div>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-24 items-center">
+              <div className="order-2 lg:order-1">
+                <div className="flex items-center gap-4 text-blue-600 font-bold tracking-[0.4em] text-[10px] uppercase mb-10">
+                  <span className="w-12 h-[1px] bg-blue-600"></span>
+                  The Visionary
+                </div>
+                <h2 className="text-6xl lg:text-8xl font-display font-medium text-gray-900 tracking-tight leading-tight mb-8">
+                  Pavan. <br /> <span className="italic font-light text-blue-600">The Proprietor.</span>
+                </h2>
+                <div className="relative">
+                  <div className="absolute -left-10 top-0 text-9xl text-blue-600/10 font-serif leading-none transition-transform duration-700 group-hover:scale-110">“</div>
+                  <p className="text-3xl lg:text-4xl font-display italic font-light text-gray-700 leading-relaxed mb-12 relative z-10">
+                    "I'm taking the highway because I wanna reach the highs fastly."
+                  </p>
+                </div>
+                <p className="text-xl text-gray-500 font-light leading-relaxed mb-12 max-w-lg">
+                  Driven by an unrelenting ambition to redefine Hyderabad's skyline. Pavan leads Badigar Space Works with a philosophy of speed, precision, and visionary transcendence. Under his leadership, we don't just design; we accelerate the future of living.
+                </p>
+                <div className="inline-block px-8 py-4 bg-white rounded-2xl shadow-xl border border-blue-50">
+                  <div className="text-gray-900 font-bold tracking-widest text-xs uppercase">Chief Visionary Officer</div>
+                  <div className="text-blue-600 text-sm font-medium mt-1">Founding Member since 1996</div>
+                </div>
+              </div>
+              <div className="order-1 lg:order-2 relative group">
+                <div className="relative z-10 overflow-hidden rounded-[5rem] shadow-4xl aspect-[4/5] border-[16px] border-white">
+                  <img
+                    alt="Pavan - Proprietor of Badigar Space Works"
+                    className="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-[3s] ease-out"
+                    src="/pavan.jpeg"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent"></div>
+                </div>
+                {/* Decorative Elements */}
+                <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-blue-600 rounded-full flex items-center justify-center p-6 shadow-3xl text-white transform group-hover:rotate-12 transition-all duration-700 z-20">
+                  <div className="border-2 border-white/20 w-full h-full rounded-full flex flex-col items-center justify-center text-center">
+                    <Sparkles className="mb-2" size={24} />
+                    <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Vision 2026</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Legacy Stats */}
         <section className="py-32 bg-blue-600 text-white relative z-10 mx-6 rounded-[5rem] shadow-4xl mb-32 border-4 border-white/10">
           <div className="max-w-7xl mx-auto px-8 lg:px-12">
