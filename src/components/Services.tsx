@@ -1,59 +1,80 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
-    title: 'Office\nDesign',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCt6Nn7mkmlav-n8QDMCiMVl-BJ-idpxMIgWhc-CvqUONdLCN0Xw2MXa6noiieMvbrtW3hl8Csy0PHnqpV9ONQ7LTgoQH4Oe1d3c9CMbmTbZgj48Y1gwJdrbCeGaX6MASNeXi4zq__2BGrNBYjguE_DEOD8Qn7NA31bnjkfVG-Qom74BEG6fPOsicf36-cUaToBXEu_UEz7O6UPV4ORQTU1qjh4xHgy7OWV03rgZOkVsOCcCLR_Lj9lfpzeXDN2GrhOS98HKGyaH6o',
-    alt: 'Modern office design with ergonomic chairs and wooden desks',
+    title: 'Atmospheric\nResidences',
+    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
+    tag: 'Residential'
   },
   {
-    title: 'Residential\nDesign',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDeKpQBwJNDH1ULCDvhwdcIByeKNN7vClN3NurNvIvcnqTd4eKRrC7gTECYU7lONL-8vuYV4ttu_3ALqgt31CTCdByB2atKH6wCmkM-FcuUNKBx_Bjg3c2z4hkRTl-TSNzk2SzRs3vyM7ZD5zupOskI6QjviPqOEPxm2aiSo5DcwjYOIEzDK-F5qCqjpRHEWYcvWGT__ZHLcfHZcLUuAtnUvDqwbLeqNa21GuBLrtnYYMODWNXaAOE4xuMmM3guJM1O5oT193x2AVI',
-    alt: 'Luxurious residential living room with a large sofa and artistic decor',
+    title: 'Visionary\nInstitutions',
+    image: 'https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?auto=compress&cs=tinysrgb&w=800',
+    tag: 'Commercial'
   },
   {
-    title: 'Commercial\nSpace',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBrIoJvSpW_u1gQ92B9w5zJrfJANye_sfb7Uc-xHDHTDLbT28J7zNJTb0AQA-9ksxhLBuOrgVv-rYtfSqZlM2Jayhcek8UKlkmZXjFbKi0ZkqgmfUtu34v6ml697fXALipkWyfmWTC0JB-3Jml-pua4NrIppHT_IMLgRGY8RDziY8pSjFhNYe_qIP_4x7oS8v_lwqQiA3gQkscOYRkTM7ow4Ziw8i4j73epZwRpvaifYFqYmqcYTKpMxyqKXsja0gkDac-ToOoQBmo',
-    alt: 'Spacious commercial area with high ceilings and modern lighting',
+    title: 'Elite\nExperiences',
+    image: 'https://images.pexels.com/photos/1036856/pexels-photo-1036856.jpeg?auto=compress&cs=tinysrgb&w=800',
+    tag: 'Retail'
   },
   {
-    title: 'Event\nDesign',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCL0hmDU-lj2HgHrQ-ZBg-ZTBNQYSnppPRL3EpEvB8qxODxupgy5TCzmF4q5VQ4wnPbCscHpRGDvlhPDJ6tmvrKNzAnovU_d6FzMvHwnRQyMlpAazyc3gKT_t58-k3DbQJKK0mPifsu2Ed8OVyXDjXg7mOvg6ntvgVulOVCriip_7hsVz5_8K9m15U140bnwE6ADK9ZMz7vX7goSsFyLPcFM_yD3J9XDRJWjXbQrEr1CvUHkBnwmsAXLjG4fzPcWe2deY9W1PsZrLA',
-    alt: 'Elegant event setup with decorated tables and chairs',
+    title: 'Sacred\nLegacies',
+    image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800',
+    tag: 'Heritage'
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="py-16 lg:py-24">
-      <div className="flex flex-col md:flex-row justify-between md:items-end mb-12">
-        <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-wide mb-4 md:mb-0">
-          EXCEPTIONAL<br />SERVICES
-        </h2>
-        <p className="md:w-1/3 leading-relaxed text-gray-400">
-          As an edifice interior business, our commitment is to deliver unparalleled services that elevate your spaces. Our expertise lies in our ability to deliver projects on time.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {services.map((service, index) => (
-          <div key={index} className="relative group overflow-hidden rounded-2xl aspect-square">
-            <img
-              alt={service.alt}
-              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out"
-              src={service.image}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6 transition-all duration-300">
-              <h3 className="text-white font-bold text-2xl uppercase opacity-100 transition-opacity duration-300 group-hover:opacity-0 whitespace-pre-line">
-                {service.title}
-              </h3>
+    <section id="services" className="py-32 lg:py-64 bg-white/50 backdrop-blur-sm px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between lg:items-end mb-32 gap-16">
+          <div className="lg:w-2/3">
+            <div className="flex items-center gap-4 text-blue-600 font-bold tracking-[0.4em] text-[10px] uppercase mb-8">
+              <Sparkles size={16} />
+              Divine Services
             </div>
-            <div className="absolute inset-0 bg-black/60 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a className="inline-flex items-center text-white font-semibold" href="#services">
-                Learn More <ArrowRight className="ml-2" size={20} />
-              </a>
-            </div>
+            <h2 className="text-6xl lg:text-9xl font-display font-medium text-gray-900 tracking-tight leading-[1.1]">
+              Architecting <br /> <span className="italic font-light">Imaginary</span> Design.
+            </h2>
           </div>
-        ))}
+          <div className="lg:w-1/3">
+            <p className="text-2xl leading-relaxed text-gray-500 font-light mb-12">
+              Transcending the physical realm through the sacred heritage of Vishwakarma and visionary innovation.
+            </p>
+            <Link to="/services" className="text-gray-900 font-bold tracking-[0.2em] uppercase text-xs flex items-center gap-4 group">
+              Explore The Vision
+              <span className="w-16 h-[1px] bg-blue-100 group-hover:w-24 group-hover:bg-blue-600 transition-all duration-700"></span>
+            </Link>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {services.map((service, index) => (
+            <div key={index} className="group relative overflow-hidden rounded-[4rem] shadow-4xl hover:shadow-2xl transition-all duration-1000 bg-gray-900">
+              <div className="absolute inset-0 z-0">
+                <img
+                  alt={service.title}
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-[3s] ease-out opacity-80 group-hover:opacity-100"
+                  src={service.image}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent opacity-90 group-hover:opacity-40 transition-opacity duration-1000"></div>
+              </div>
+
+              <div className="relative z-10 h-[600px] flex flex-col justify-end p-12">
+                <div className="mb-6 text-blue-400 font-bold tracking-[0.3em] text-[10px] uppercase">
+                  {service.tag}
+                </div>
+                <h3 className="text-white font-display font-medium text-4xl whitespace-pre-line leading-tight mb-10 translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+                  {service.title}
+                </h3>
+                <Link to="/services" className="inline-flex items-center justify-center w-16 h-16 rounded-[1.5rem] bg-white text-gray-900 transform translate-y-20 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 hover:bg-blue-600 hover:text-white shadow-2xl">
+                  <ArrowRight size={28} />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

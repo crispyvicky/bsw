@@ -9,11 +9,11 @@ import Footer from '../components/Footer';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background-light dark:bg-background-dark text-gray-700 dark:text-gray-300 antialiased">
+    <div className="min-h-screen bg-[#F8FAFF] text-[#0F172A] antialiased">
       <Navbar />
-      <main className="px-6 lg:px-8">
+      <main>
         <Hero />
-        <div className="max-w-7xl mx-auto">
+        <div className="space-y-0">
           <About />
           <Gallery />
           <Services />
@@ -21,9 +21,7 @@ export default function HomePage() {
           <Blog />
         </div>
       </main>
-      <div className="px-6 lg:px-8">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

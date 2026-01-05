@@ -3,35 +3,44 @@ import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
-    <section id="about" className="py-24 lg:py-32">
-      <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-        <div className="relative grid grid-cols-5 gap-4">
-          <div className="col-span-3">
-            <img
-              alt="Modern living room with a built-in sofa by a large window overlooking a city"
-              className="w-full h-full object-cover rounded-2xl"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7zzWO_8LeAnHQPPwbFtf34MrpYZ0dUDBcjjazptkMArqjA3Ldp-AdHHzoWLLv5OxEcDmU5nmUvSAoI3nB7g3fRK8zWfoHjY2FcSAHIdR3At7snIO4j1Moa4mP_PFLOPOL65ghaPZJu7gXQ5AkgiRyEB5bY-72G-vaa69KpG6L9Rd-q8P8sdENcctTe9kw0exreMDn1LgdA7-44-NnjimtJ2su2FZu_08LzXGkev3-ya2rFd7HieSjMvCa6r6mizr23Drx-D3eoP8"
-            />
+    <section id="about" className="py-32 lg:py-48 px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
+        <div className="relative">
+          <div className="relative z-10 grid grid-cols-6 gap-4">
+            <div className="col-span-4 overflow-hidden rounded-[3rem] shadow-2xl">
+              <img
+                alt="Premium living space design"
+                className="w-full aspect-[4/5] object-cover hover:scale-110 transition-transform duration-700"
+                src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800"
+              />
+            </div>
+            <div className="col-span-2 self-end overflow-hidden rounded-[2rem] shadow-2xl border-8 border-white">
+              <img
+                alt="Elegant architectural details"
+                className="w-full aspect-square object-cover hover:scale-110 transition-transform duration-700"
+                src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800"
+              />
+            </div>
           </div>
-          <div className="col-span-2 self-end">
-            <img
-              alt="Stylish interior with wooden stairs, warm lighting, and green plants"
-              className="w-full object-cover rounded-2xl"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCweamak4QFg4vi-C3KRZ-Bmy5GAcxrz9Aw7qPv4HlM9DxH7HIK3l6t98NqqOqsIvkNeYPNk-fvyLQFH2YLvwkWFqIlmRM9R4OsCYgkRerov_o6H3nu1BZdHyXOFh3kXRKCVYP4Rw73yUxeLE2g_zoRfsSOFfregal-SNMh6DbfbytHwfYHSoK_JO2t9Aie78UYw-517JQYNOMIzC1Fnec2Yn3JkGgpgdPf9_GY7a3rdl2R463e5EojhOX86CA6_3sZOLeNj0nse30"
-            />
-          </div>
+          <div className="absolute -top-12 -left-12 w-48 h-48 bg-blue-50/50 rounded-full blur-3xl z-0"></div>
+          <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-blue-100/30 rounded-full blur-3xl z-0"></div>
         </div>
-        <div className="lg:pl-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-wide">
-            ABOUT US
+
+        <div className="lg:pl-12">
+          <div className="mb-6 flex items-center gap-4 text-blue-600 font-bold tracking-[0.3em] text-xs uppercase">
+            <span className="w-10 h-[2px] bg-blue-600"></span>
+            The Heritage since 1996
+          </div>
+          <h2 className="text-5xl lg:text-7xl font-display font-medium text-gray-900 tracking-tight leading-[1.1] mb-10">
+            Design that <br /> <span className="italic font-light">Transcends.</span>
           </h2>
-          <p className="my-8 leading-relaxed text-gray-400">
-            Our approach is rooted in collaboration. We listen, understand, and work closely with our clients to translate their dreams into reality. Whether it's a cozy home, a vibrant office, or a commercial space, we infuse every project with passion and precision.
+          <p className="text-xl leading-relaxed text-gray-500 mb-12 font-light">
+            Badigar Space Works introduces <span className="font-medium text-gray-900">Imaginary Design</span>—a visionary approach where ancient Vishwakarma artistry meets contemporary luxury. We don't just fill rooms; we curate atmospheric legacies.
           </p>
-          <Link className="inline-flex items-center font-semibold text-gray-900 dark:text-white group" to="/about">
-            READ MORE
-            <span className="ml-3 flex items-center justify-center w-8 h-8 rounded-full border border-gray-400 dark:border-gray-600 group-hover:bg-white dark:group-hover:text-black transition-all">
-              <ArrowRight size={16} />
+          <Link className="inline-flex items-center gap-6 group" to="/about">
+            <span className="text-lg font-bold text-gray-900 tracking-widest uppercase">Explore Our Story</span>
+            <span className="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all duration-500 transform group-hover:rotate-45">
+              <ArrowRight size={24} />
             </span>
           </Link>
         </div>

@@ -1,25 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #F8FAFF;
+  --foreground: #0F172A;
+  --accent-blue: #3B82F6;
+  --accent-soft: #F1F5F9;
+  --accent-gold: #B45309;
+}
+
 html {
   scroll-behavior: smooth;
+  cursor: auto;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0.03), transparent 30%),
-                    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.03), transparent 40%);
-}
-
-.dark {
-  background-color: #111111;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.03), transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.03), transparent 50%);
+  -webkit-font-smoothing: antialiased;
 }
 
 .font-display {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .scrollbar-hide {
@@ -38,10 +45,22 @@ body {
   left: 1.125rem;
   width: 2px;
   height: 100%;
-  background-color: #374151;
+  background-color: #E5E7EB;
   z-index: 0;
 }
 
 .timeline-item:last-child::before {
   display: none;
+}
+
+.premium-card {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
 }

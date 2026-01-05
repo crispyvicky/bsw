@@ -1,56 +1,66 @@
 const blogPosts = [
   {
-    title: 'Navigating the Shifting Tides: Strategies',
+    title: 'Divine Symmetry: The Vishwakarma Influence',
     readTime: '10 min read',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDzbmEC9ZXfYNLHzxDmsImAabywuQKvYhFTOYoUfTO0-LqWdyVZ2bYIXbokVS3kEt-sgXfgYLTWC2Zfmvni_h_dYSKi2jf1QMG2VNLTFVjfotLTd4D_6QxfeN4fd7aan_2IlOjlCKNAZ_jAd9VQE_34FQvObAtquH0iE3qNTekUio_TaauGG0HTUP8_xaJgHu7jIYkofkObtC3vRT86r6qRCHfJFHeqOMBsNC3HMzji56PezXyE1gMYOst7th7UKMHTFEIG2cS1p8k',
-    alt: 'Stylish living room with pink armchair and dark walls',
+    image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Heritage architecture',
   },
   {
-    title: 'Unlock the Door to Smart Investing',
+    title: 'Modern Hyderabadi Villas: A 28-Year Legacy',
     readTime: '8 min read',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBOzpodheUdElS2E5aepwhWEjPXB64ecq9fQvn3jvGnt16ISidVHEn7vFr_9xrWM2MLYwhp6xtCxYAKkCEXEIcPrj9mqvkGdaRuBp8gt405xKUuRgG-9SMxC-dySZQOJp3qhNsCsw4xqkTJ3P083ThBEReleVqH6VKhc9mDZwztw3oB4FLSHw2wN9jJ5S-t7NpPUj_JMZtbm1SWHJR_KyLTHZXjFJ9822zaAs65-06xjqyZ3bXK7Cun4KpYb3vkQwkRyh_-e0EW2gM',
-    alt: 'Modern dining area with black chairs and a unique geometric chandelier',
+    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Luxury villa',
   },
   {
-    title: 'Hottest Neighborhoods for Millennial Homebuyers',
+    title: 'Sustainable Interiors in Mahankali Nagar',
     readTime: '12 min read',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAKuVBBhNYEbgfKApw5oBREH9k5OrpMxmIxukb1OLVUv-iQwySz4OEai9zuEKtHodYd67Q1Ngx7mmjv2MNoSsQOGR9Cdwx-mAiOClhTKrU3g9nzIC19fVeqGE9B3X4nQdBGxk2r_KKBqQERi-kNFvhi8R3CwVOx1V7u1xwTVKGL-0S10L3DZ0tfGDKD7OaK4Mzd-yMAw0JdWFREegZ3Lro_Mdd_XGyf3ZyCor_5HpPwVh4LCf5QgC8QvIfWbRvQR-rUHU63ycGWZHg',
-    alt: 'Minimalist room with a single wooden chair against a white wall',
+    image: 'https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Natural materials interior',
   },
 ];
 
 export default function Blog() {
   return (
-    <section className="py-16 lg:py-24">
-      <div className="flex justify-between items-center mb-12">
-        <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-wide">
-          REAL ESTATE<br />INSIGHTS
-        </h2>
-        <a className="hidden md:inline-block text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-400 transition-colors" href="#blog">
-          SEE ALL BLOGS
-        </a>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {blogPosts.map((post, index) => (
-          <div key={index} className="group cursor-pointer">
-            <div className="overflow-hidden rounded-2xl mb-4">
-              <img
-                alt={post.alt}
-                className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300"
-                src={post.image}
-              />
+    <section className="py-32 lg:py-48 px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between lg:items-end mb-24 gap-8">
+          <div>
+            <div className="mb-6 flex items-center gap-3 text-blue-600 font-bold tracking-[0.3em] text-xs uppercase">
+              Curated Insights
             </div>
-            <h3 className="font-semibold text-lg text-gray-900 dark:text-white mb-2 group-hover:text-gray-600 dark:group-hover:text-gray-400 transition-colors">
-              {post.title}
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">{post.readTime}</p>
+            <h2 className="text-5xl lg:text-8xl font-display font-medium text-gray-900 tracking-tight leading-tight">
+              Design <span className="italic font-light">Journal.</span>
+            </h2>
           </div>
-        ))}
-      </div>
-      <div className="text-center mt-12 md:hidden">
-        <a className="text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-400 transition-colors" href="#blog">
-          SEE ALL BLOGS
-        </a>
+          <a className="inline-flex items-center text-sm font-bold uppercase tracking-[0.2em] text-blue-600 hover:text-blue-800 transition-colors group" href="#blog">
+            Explore All Articles
+            <span className="ml-4 w-12 h-[1px] bg-blue-200 group-hover:w-20 group-hover:bg-blue-600 transition-all duration-500"></span>
+          </a>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+          {blogPosts.map((post, index) => (
+            <div key={index} className="group cursor-pointer">
+              <div className="overflow-hidden rounded-[3.5rem] mb-10 shadow-2xl relative">
+                <img
+                  alt={post.alt}
+                  className="w-full h-[450px] object-cover transform group-hover:scale-110 transition-transform duration-[2s] ease-out"
+                  src={post.image}
+                />
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-all duration-700"></div>
+              </div>
+              <div className="px-4">
+                <h3 className="font-display font-medium text-3xl text-gray-900 mb-6 group-hover:text-blue-600 transition-colors leading-tight">
+                  {post.title}
+                </h3>
+                <div className="flex items-center text-xs text-gray-400 font-bold tracking-[0.2em] uppercase">
+                  <span className="w-8 h-[1px] bg-blue-600 mr-4"></span>
+                  {post.readTime}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
